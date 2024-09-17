@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather App</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="content">
+  <h1>Weather App</h1>
+  <div id="location"></div>
+  <table>
+    <caption>Location Data</caption>
+    <tr>
+      <th>City</th>
+      <th>Region</th>
+      <th>Country</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+    </tr>
+    <tr id="locationRow">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <table>
+    <caption>Current Weather</caption>
+    <thead>
+      <tr>
+        <th>Temperature (°C)</th>
+        <th>Weather Description</th>
+        <th>Wind Speed (km/h)</th>
+        <th>Wind Degree</th>
+        <th>Pressure (mb)</th>
+        <th>Precipitation (mm)</th>
+        <th>Humidity (%)</th>
+      </tr>
+    </thead>
+    <tbody id="weatherTableBody">
+      <tr>
+        <td colspan="7">Loading...</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
